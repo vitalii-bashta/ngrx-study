@@ -1,0 +1,18 @@
+{
+	"extends": "stylelint-config-standard",
+	"rules": {
+		"indentation": "tab",
+		"string-quotes": "single",
+		"max-nesting-depth": 4,
+		"selector-max-compound-selectors": 4,
+		"selector-max-id": 1,
+		"selector-max-class": 2,
+		"color-no-hex": true,
+		"color-named": "never",
+		"max-line-length": 100,
+		"comment-word-blacklist": ["TODO"],
+		"value-list-comma-space-after": "always",
+		"declaration-block-semicolon-newline-after": "always",
+		"no-empty-source": null
+	}
+}

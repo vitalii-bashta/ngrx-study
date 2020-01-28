@@ -1,0 +1,7 @@
+{
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"tslint.rulesDirectory": "./node_modules/codelyzer",
+	"typescript.tsdk": "node_modules/typescript/lib"
+}
