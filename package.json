@@ -9,7 +9,8 @@
 		"e2e": "ng e2e",
 		"lint": "ng lint",
 		"stylelint": "./node_modules/.bin/stylelint **/*.scss",
-		"linthtml": "htmllint src/app/**/*.html"
+		"linthtml": "htmllint **/*.html",
+		"stats": "ng build --prod --stats-json && npx webpack-bundle-analyzer dist/ngrx-test/stats-es2015.json"
 	},
 	"husky": {
 		"hooks": {
@@ -59,6 +60,7 @@
 		"stylelint-config-standard": "^19.0.0",
 		"ts-node": "~7.0.0",
 		"tslint": "^5.15.0",
-		"typescript": "~3.5.3"
+		"typescript": "~3.5.3",
+		"webpack-bundle-analyzer": "^3.6.0"
 	}
 }
