@@ -9,7 +9,7 @@
 		"e2e": "ng e2e",
 		"lint": "ng lint",
 		"stylelint": "./node_modules/.bin/stylelint **/*.scss",
-		"linthtml": "htmllint **/*.html",
+		"linthtml": "htmllint src/app/**/*.html",
 		"stats": "ng build --prod --stats-json && npx webpack-bundle-analyzer dist/ngrx-test/stats-es2015.json"
 	},
 	"husky": {
