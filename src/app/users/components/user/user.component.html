@@ -1,0 +1,12 @@
+<ng-container *ngIf="!editing; else edit">
+	{{ user.id }} {{ user.name }}
+	<a [routerLink]="['/detail', user.id]">
+		<button class="button">Details</button>
+	</a>
+</ng-container>
+
+<ng-template #edit>
+	{{ user.id }} <input [(ngModel)]="user.name">
+</ng-template>
+
+<button (click)="onEdit()">{{ editing ? 'Done' : 'Edit' }}</button>

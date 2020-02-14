@@ -1,0 +1,12 @@
+<ng-container *ngIf="selectedUser; then userDetails else spinner"></ng-container>
+
+<ng-template #userDetails>
+	<pre>{{ selectedUser | json }}</pre>
+	<button (click)="onBack()">Back</button>
+</ng-template>
+
+<ng-template #spinner>
+	<div class="spinner">
+		<mat-spinner></mat-spinner>
+	</div>
+</ng-template>

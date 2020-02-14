@@ -13,3 +13,16 @@ body {
 .myapp-no-padding-dialog .mat-dialog-container {
 	padding: 0;
 }
+
+.spinner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.mat-progress-spinner circle, .mat-spinner circle {
+	stroke: lightskyblue;
+}

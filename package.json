@@ -12,11 +12,6 @@
 		"linthtml": "htmllint src/app/**/*.html",
 		"stats": "ng build --prod --stats-json && npx webpack-bundle-analyzer dist/ngrx-test/stats-es2015.json"
 	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "npm run lint && npm run stylelint && npm run linthtml"
-		}
-	},
 	"private": true,
 	"dependencies": {
 		"@angular/animations": "~8.2.4",
